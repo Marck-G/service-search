@@ -28,8 +28,8 @@ def odoo_host_search(host_conf, host_port, barra, update, startIP = 0, ipText = 
             return host
         s.close()
 
-def core_load_conf():
 
+def core_load_conf():
     try:
         file = open("odoo-search.conf")
         conf = json.loads("\n".join(file.readlines()))
